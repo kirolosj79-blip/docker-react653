@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          now we are using Tests and volumes in docker 
+          now we are using CICD to make a deployment automation Gamed ya Gamed 
         </p>
         <a
           className="App-link"

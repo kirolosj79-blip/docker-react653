@@ -13,10 +13,10 @@ jobs:
       - run: docker build -t ahmedgamil/react-test -f Dockerfile.dev .
       - run: docker run -e CI=true ahmedgamil/react-test npm run test
 
-      - run: docker build -t ahmedgamil/multi-client ./client 
-      - run: docker build -t ahmedgamil/multi-nginx ./nginx 
-      - run: docker build -t ahmedgamil/multi-server ./server 
-      - run: docker build -t ahmedgamil/multi-worker ./worker 
+      - run: docker build -t ahmedgamil/multi-client .mircorservices/client 
+      - run: docker build -t ahmedgamil/multi-nginx .mircorservices/nginx 
+      - run: docker build -t ahmedgamil/multi-server .mircorservices/server 
+      - run: docker build -t ahmedgamil/multi-worker .mircorservices/worker 
 
       - run: docker push ahmedgamil/multi-client
       - run: docker push ahmedgamil/multi-nginx
